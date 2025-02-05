@@ -91,6 +91,7 @@ button {
     font-weight: 900;
     line-height: 26px;
     cursor: pointer;
+    width: max-content;
 }
 
 .btn-blue {
@@ -201,11 +202,12 @@ footer .number-container {
 
 .footer-info {
     display: flex;
-    align-items: center;
-    gap: 3rem;
+    gap: 10rem;
     padding-block: 12rem;
-    justify-content: space-between;
+    justify-content: center;
+    align-items: center;
 }
+
 
 .btn-purple .version {
     color: var(--very-light-purple);
@@ -216,6 +218,10 @@ footer .number-container {
     max-width: 350px;
     font-size: 18px;
     font-weight: 500;
+}
+
+.hero-info, .people, .footer-info {
+    padding-inline: 1.5rem;
 }
 
 /* media query */
@@ -232,6 +238,8 @@ footer .number-container {
 @media (max-width: 1025px) {
     .footer-info {
         flex-direction: column;
+        gap: 3rem;
+        padding-block: 6rem;
     }
 }
 
